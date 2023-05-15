@@ -34,7 +34,8 @@ namespace osqp {
 // For consistency with ospq, this must be int on 32-bit systems, and
 // long long on 64-bit systems.
 #if INTPTR_MAX == INT64_MAX
-using c_int = long long;  // NOLINT
+//using c_int = long long;  // NOLINT YJQ:Change to int for cuosqp
+using c_int = int; //for cuda
 #else
 using c_int = int;  // NOLINT
 #endif
