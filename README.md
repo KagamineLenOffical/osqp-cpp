@@ -1,5 +1,8 @@
 # osqp-cpp: A C++ wrapper for [OSQP](https://osqp.org/)
 
+A modified version for cuosqp, which use admm algorithm with pcg on gpu. About 3~5 times faster than the cpu version.
+Part of the function is not useable due to different data structure.
+
 A C++ wrapper for [OSQP](https://github.com/oxfordcontrol/osqp), an
 [ADMM](http://stanford.edu/~boyd/admm.html)-based solver for
 [quadratic programming](https://en.wikipedia.org/wiki/Quadratic_programming).
